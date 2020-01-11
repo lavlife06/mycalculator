@@ -1,0 +1,113 @@
+body{
+  display: grid;
+  background-color: palegreen;
+  align-content: center;
+  margin: 10px;
+}
+.container{
+  display: grid;
+  grid-template: repeat(5,75px) / repeat(6,100px);
+  justify-content: center;
+  grid-template-areas:
+  'dis dis dis dis dis dis' 
+  'a b c d e f'
+  'g h i j k l'
+  'm n o p v q'
+  'r s t u v w';
+  grid-auto-flow: dense;
+}
+.container > div{
+  font-size: 55px;
+  color: aliceblue;
+  border: 2px solid black;
+  background-color: black;
+  margin: 1px;
+  text-align: center;
+}
+.container > button{
+  color: aliceblue;
+  border: 2px solid black;
+  background-color: black;
+  margin: 1px;
+  text-align: center;
+  padding: 0;
+  margin: 1px;
+}
+.display{
+  grid-column: 1 / -1;
+  grid-area: dis;
+}
+.q{
+  grid-column: 6/7;
+  grid-area: q; 
+}
+.a{
+  grid-area: a;
+}
+.b{
+  grid-area: b;
+}
+.c{
+  grid-area: c;
+}
+.d{
+  grid-area: d;
+}
+.e{
+  grid-area: e;
+}
+.f{
+  grid-area: f;
+}
+.g{
+  grid-area: g;
+}
+.h{
+  grid-area: h;
+}
+.i{
+  grid-area: i;
+}
+.j{
+  grid-area: j;
+}
+.k{
+  grid-area: k;
+}
+.l{
+  grid-area: l;
+}
+.m{
+  grid-area: m;
+}
+.n{
+  grid-area: n;
+}
+.o{
+  grid-area: o;
+}
+.p{
+  grid-area: p;
+}
+.r{
+  grid-area: r;
+}
+.s{
+  grid-area: s;
+}
+.t{
+  grid-area: t;
+}
+.u{
+  grid-area: u;
+  font-size: 70px;
+}
+.v{
+  grid-area: v;
+  font-size: 20px;
+  font-size: 75px;
+}
+.w{
+  grid-area: w;
+  font-size: 50px;
+}
